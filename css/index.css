@@ -86,7 +86,7 @@ html,body {
 #navBar li a {
   display:inline-block;
   text-decoration: none;
-  color: black;
+  color: #fff;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 25px;
