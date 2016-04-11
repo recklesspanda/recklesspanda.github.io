@@ -42,6 +42,14 @@ html,body {
 #about_p {
   padding: 150px;
 }
+#projects{
+  background-color: #fff;
+  margin-top: 100%;
+  padding-bottom: 100px;
+}
+#projects_p{
+  padding: 150px
+}
 
 #contact{
   background-color: #fff;
