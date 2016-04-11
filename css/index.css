@@ -20,7 +20,7 @@ html,body {
     z-index:100;	
 }
 #daun{
-	background-image: url(../images/IMG_2480.jpg);
+	background-image: url(../images/fish.png);
   background-size: cover;
   background-repeat: no-repeat;
   position:fixed;
