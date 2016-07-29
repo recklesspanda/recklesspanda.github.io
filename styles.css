@@ -1,0 +1,232 @@
+p {
+	font-size: 115%;
+}
+a {
+	color: purple;
+}
+html,body {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+hr {
+	border-color: black;
+}
+/*---------------------------------------------------------*/
+
+.wrapper {
+	position:absolute;
+    height:100%;
+    width:100%;
+}
+.header {
+	background-color: yellow;
+}
+.content {
+	background-color: white;
+	margin-top: 70px;
+
+}
+#filler {
+	animation: blink 40s linear infinite;
+    -webkit-animation: blink 40s linear infinite;
+
+}
+/*---------------------------------------------------------*/
+#about {
+	background-color: white;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left;
+}
+#projects {
+	background-color: white;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left;
+}
+#resume {
+	background-color: white;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left
+}
+#contact {
+	background-color: white;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left
+}
+#blog {
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left
+}
+.blogimagescontainer {
+  text-align: center;
+}
+
+/*---------------------------------------------------------*/
+.footer {
+	background-color: #efefef;
+	/*padding-top: 1.5%;*/
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+}
+/*---------------------------------------------------------*/
+.socialIcons {
+	margin: auto;
+    width: 18%;
+}
+
+img.social{
+	padding: 4%;
+}
+
+#contact_form {
+	background-color: #efefef;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 2.5%;
+	padding-right: 3%;
+	border-radius: 10px;
+	width: 40%;
+}
+
+/*-----------------------------*/
+/* Nav Bar                     */
+/*-----------------------------*/
+#navBar {
+  list-style:none;
+  margin:20;
+  padding:0;
+  text-align:center;
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+
+
+}
+#navBar ul {
+  margin: 0;
+  padding: 0;   
+  background-color: #efefef; 
+
+
+}
+#navBar li {
+  display:inline;
+  background-color: #efefef;
+  color: #efefef;
+  list-style-type: none;
+
+
+}
+#navBar li a {
+  display:inline-block;
+  text-decoration: none;
+  color: black;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-weight: normal;
+  font-size: 90%;
+  letter-spacing: 4px;
+
+
+}
+#navBar li a:hover {
+   text-decoration: none;
+   color: blue;
+   opacity: 0.5;
+
+  
+}
+
+
+/*-----------------------------*/
+/* Trans Box                   */
+/*-----------------------------*/
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.2;
+  filter: alpha(opacity=20); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+/*-----------------------------*/
+/* Color Animation             */
+/*-----------------------------*/
+@keyframes blink {
+  0% {
+    background: violet;
+  }
+  14.3% {
+    background: indigo;
+  }
+  28.6% {
+    background: blue;
+  }
+  42.9% {
+    background: green;
+  }
+  57.2% {
+    background: yellow;
+  }
+  71.5% {
+    background: orange;
+  }
+  85.8% {
+    background: red;
+  }
+  100% {
+    background: violet;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background: violet;
+  }
+  14.3% {
+    background: indigo;
+  }
+  28.6% {
+    background: blue;
+  }
+  42.9% {
+    background: green;
+  }
+  57.2% {
+    background: yellow;
+  }
+  71.5% {
+    background: orange;
+  }
+  85.8% {
+    background: red;
+  }
+  100% {
+    background: violet;
+  }
+}
+
+
+
