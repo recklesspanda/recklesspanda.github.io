@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>The Draw of Snapchat-Stephen Ritchie Designs</title>
-  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <link rel="stylesheet" type="text/css" href="/styles.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -13,13 +13,29 @@
   <script src="js/floatingNav.js"></script>
   <script src="js/skrollr.js"></script>
 </head>
-<body background="../media/code.png">
+<body background="/media/code.png">
 
 
   <div class="wrapper">
 
     <!-- HEADER -->
-    <?php require '../header.html'; ?>
+    <header>
+      <div id="navBar">
+        <nav>
+          <ul>    
+            <li><a href="#about">ABOUT</a></li> 
+            |
+            <li><a href="#projects">PROJECTS</a></li>
+            | 
+            <li><a href="#blog">BLOG</a></li>
+            |      
+            <li><a href="#resume">RESUME</a></li>
+            |
+            <li><a href="#contact">CONTACT</a></li> 
+          </ul>
+        </nav>
+      </div>
+    </header>
 
 
     <!-- CONTENT -->
@@ -46,7 +62,24 @@
       
 
     <!-- FOOTER -->
-    <?php require '../footer.html'; ?>
+    <div class="footer">
+      <!-- <div id="filler"> -->
+        <!-- <br> -->
+      <!-- </div> -->
+      <br>
+      <footer>Copyright &copy <?php echo date("Y"); ?> Stephen Ritchie</footer>
+      <br>
+      <div class="socialIcons">
+        <a href="http://www.twitter.com" target="blank"><img class="social" src="media/icons/twitter.svg" alt="twitter"></a>
+        <a href="https://github.com/stephen-ritchie" target="blank"><img class="social" src="media/icons/github.svg" alt="github"></a>
+        <a href="http://www.linkedin.com" target="blank"><img class="social" src="media/icons/linkedin.svg" alt="Linkedin"></a>
+        <a href="http://www.instagram.com" target="blank"><img class="social" src="media/icons/instagram.svg" alt="Instagram"></a>
+      </div>
+
+    
+
+
+    </div>
 
     
 
