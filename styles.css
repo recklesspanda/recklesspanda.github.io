@@ -14,6 +14,7 @@ html,body {
 }
 hr {
 	border-color: black;
+  width: 100%;
 }
 /*---------------------------------------------------------*/
 
@@ -41,79 +42,55 @@ hr {
 	padding-left: 5%;
 	padding-right: 5%;
 	text-align: left;
+  float: left;
 }
 #projects {
 	background-color: white;
 	padding-left: 5%;
 	padding-right: 5%;
 	text-align: left;
+  float: left;
 }
 #resume {
 	background-color: white;
 	padding-left: 5%;
 	padding-right: 5%;
-	text-align: left
+	text-align: left;
+  float: left;
 }
 #contact {
 	background-color: white;
 	padding-left: 5%;
 	padding-right: 5%;
-	text-align: left
+	text-align: left;
+  float: left;
 }
 #blog {
   background-color: white;
   padding-left: 5%;
   padding-right: 5%;
-  text-align: left
+  text-align: left;
+  overflow: hidden;
+  float: left;
 }
 
 
-ul.img-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.img-list {
   text-align: center;
 }
 
-ul.img-list li {
+ul.private {
+  width: 45%;
   display: inline-block;
-  height: 150px;
-  margin: 0 1em 1em 0;
-  position: relative;
-  width: 150px;
+  overflow: hidden;
+  float: left;
 }
+ul.business {
+  width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
 
-ul.img-list img {
-  border-radius: 15px;
-}
-
-span.text-content {
-  background: rgba(0,0,0,0.6);
-  border-radius: 15px;
-  color: white;
-  cursor: pointer;
-  display: table;
-  font-size: 1.5em;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
-
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-ul.img-list li:hover span.text-content {
-  opacity: 1;
 }
 
 /*---------------------------------------------------------*/
