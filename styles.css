@@ -18,61 +18,46 @@ hr {
 }
 /*---------------------------------------------------------*/
 
+
 .wrapper {
 	position:absolute;
     height:100%;
     width:100%;
 }
-.header {
-	background-color: yellow;
-}
+
 .content {
 	background-color: white;
 	margin-top: 70px;
 
 }
-#filler {
-	animation: blink 40s linear infinite;
-    -webkit-animation: blink 40s linear infinite;
 
-}
 /*---------------------------------------------------------*/
-#about {
-	background-color: white;
-	padding-left: 5%;
-	padding-right: 5%;
-	text-align: left;
-  float: left;
-}
-#projects {
-	background-color: white;
-	padding-left: 5%;
-	padding-right: 5%;
-	text-align: left;
-  float: left;
-}
-#resume {
-	background-color: white;
-	padding-left: 5%;
-	padding-right: 5%;
-	text-align: left;
-  float: left;
-}
-#contact {
-	background-color: white;
-	padding-left: 5%;
-	padding-right: 5%;
-	text-align: left;
-  float: left;
-}
-#blog {
+.contentpiece {
   background-color: white;
   padding-left: 5%;
   padding-right: 5%;
+  width: 90%;
+  margin-bottom: 15%;
   text-align: left;
-  overflow: hidden;
   float: left;
 }
+
+#about {
+  background-color: white;
+	padding-top: 3%;
+}
+#projects {
+}
+#blog {
+  overflow: hidden;
+}
+#resume {
+	
+}
+#contact {
+  padding-bottom: 20%;
+}
+
 
 
 .img-list {
@@ -194,62 +179,47 @@ div.transbox p {
 }
 
 
-/*-----------------------------*/
-/* Color Animation             */
-/*-----------------------------*/
-@keyframes blink {
-  0% {
-    background: violet;
-  }
-  14.3% {
-    background: indigo;
-  }
-  28.6% {
-    background: blue;
-  }
-  42.9% {
-    background: green;
-  }
-  57.2% {
-    background: yellow;
-  }
-  71.5% {
-    background: orange;
-  }
-  85.8% {
+
+
+
+
+
+
+
+/*
+@media screen and (min-width: 980px)  {
+  body {
     background: red;
   }
-  100% {
-    background: violet;
+  .footer {
+    background-color: red;
   }
 }
 
-@-webkit-keyframes blink {
-  0% {
-    background: violet;
-  }
-  14.3% {
-    background: indigo;
-  }
-  28.6% {
+@media screen  and (max-width: 979px)  {
+  body {
     background: blue;
   }
-  42.9% {
-    background: green;
-  }
-  57.2% {
-    background: yellow;
-  }
-  71.5% {
-    background: orange;
-  }
-  85.8% {
-    background: red;
-  }
-  100% {
-    background: violet;
+  .footer {
+    background-color: blue;
   }
 }
+
+@media screen and (max-width: 500px)  {
+  body {
+    background: green;
+  }
+  .footer {
+    background-color: yellow;
+  }
+}
+
+*/
+
+
+
+
+
 
 
 
