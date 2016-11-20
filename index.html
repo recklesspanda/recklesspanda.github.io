@@ -1,157 +1,46 @@
-<!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Home-Stephen Ritchie Designs</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-  <script src="js/scrollTo.js"></script>
-  <script src="js/floatingNav.js"></script>
-  <script src="js/skrollr.js"></script>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-81686712-1', 'auto');
-  ga('send', 'pageview');
-  </script>
-</head>
-<!-- <body background="media/code.png"> -->
-<body>
-<script>
-function emailConfirmation() {
-  alert("Thank you!");
-}
-</script>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet"  href="css/main.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
 
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
 
-  
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32">
+  <h1><b><span class="w3-tag">stephen-ritchie </span></b></h1>
+  <p>Welcome to the collections and thoughts of Stephen Ritchie.</p>
+</header>
 
+<!-- Grid -->
+<div class="w3-row">
 
-  <div class="wrapper">
-
-    <!-- HEADER -->
-    <header>
-      <div id="navBar">
-        <nav>
-          <ul>    
-            <li><a href="#about">ABOUT</a></li> 
-            |
-            <li><a href="#projects">PROJECTS</a></li>
-            | 
-            <li><a href="#blog">BLOG</a></li>
-            |      
-            <li><a href="#resume">RESUME</a></li>
-            |
-            <li><a href="#contact">CONTACT</a></li> 
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-
-    <!-- CONTENT -->
-    <div class="content">
-      <div id="about" class="contentpiece">
-        <br>
-        <br>
-        <br>
-        <h2>About</h2>
-        <hr>
-        <p>Hi, my name is Stephen Ritchie and I'm a computer science student at the University of Kentucky.  One of my favorite things to do is examine the world around me, and see how I can apply my technology skills to improve something.  Through different mentors I've interacted with, I've narrowed down my passions to the following...</p>
-        <ul>
-          <li>technology</li>
-          <li>entrepreneurship</li>
-          <li>hard work</li>
-        </ul>
-        <p>This is a site that I've built to share my ideas with the global audience.  This site will most likely evolve and change over time, so make sure to check back every once in a while to see what's new.  And if you find yourself sharing these same values that I do, get in contact with me.  I love bouncing ideas around and building a network of like minded individuals.</p>
-        <p>*disclaimer: I apologize in advance for any grammatical/spelling errors. I write all my own code from scratch, so every once in a while I may slip up.</p>
-      </div>
-
-
-      <div id="projects" class="contentpiece">
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2 style="display:inline;">Projects</h2><h2 style="color:red; display:inline;"> -currently under construction! projects to come soon!-</h2>
-        <hr>
-        <p>I currently maintain both a public and private portfolio showcasing some of my different skill and passions. You can find these projects below. Feel free to click on any of them to see more.</p>
-        <p>I'm still working on the write-ups for my projects, but within the next week there should be a few posted here.</p>
-        <ul class="business">
-          <h4>Business Portfolio</h4>
-          <!-- <li><a href="#">Lexington Catholic High School Consultant Work</a></li> -->
-        </ul>
-        <ul class="private">
-          <h4>Private Portfolio</h4>
-          <!-- <li><a href="#">Email Stock Report</a></li> -->
-        </ul>
-      </div>
-
-
-      <div id="blog" class="contentpiece">
-        <br>
-        <br>
-        <br>
-        <h2>Blog</h2>
-        <hr>
-        <p>Here is a running archive of some of the daily thoughts of a millenial. The spectrum of topics varies greatly, and I try to post at least one new blog every week.  Most will have something to do with business or technology, but really it comes down to whatever is inspringing me that week.</p>
-        <div class="img-list">
-          <a href="blogs/snapchat.html"><img src="media/snapchat.png" alt="blog" width="350" height="350" border="0"></a>
-          <a href="blogs/the-process.html"><img src="media/the_process.jpg" alt="blog" width="350" height="350" border="0"></a>
-        </div>
-      </div>
-
-
-      <div id="resume" class="contentpiece">
-        <br>
-        <br>
-        <br>
-        <h2>Resume</h2>
-        <hr>
-        <div class="img-list">
-          <a href="media/StephenRitchie_Resume.pdf" target="_blank"><img src="media/resume_thumbnail.jpg" alt="resume" width="350" height="350" border="0"></a>
-        </div>
-      </div>
-
-
-      <div id="contact" class="contentpiece">
-        <br>
-        <br>
-        <br>
-        <h2>Contact</h2>
-        <hr>
-        <p>I can be contacted at any of the below addresses. I keep a pretty tidy inbox, so if you email me you should hear back withiin 24 hours. I'm also reachable through both phone and text.  You can also click any of the social media icons on the bottom of the screen to link off to my social media pages and connect with me through there.</p>
-        <p>work - <a href="mailto:stephenritchiedesigns@gmail.com" target="_top">stephenritchiedesigns@gmail.com</a></p>
-        <p>school - <a href="mailto:stephen.ritchie@uky.com" target="_top">stephen.ritchie@uky.edu</a></p>
-        <p>personal - <a href="mailto:stephenfritchie@gmail.com" target="_top">stephenfritchie@gmail.com</a></p>
-        <p>phone - <a href="tel:18595765482">859.576.5482</a></p>
-      </div>
+<!-- Blog entries -->
+<!-- <div class="w3-col l8 s12"> -->
+<div class="w3-container">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <!-- <img src="img/placeholder.png" alt="snapchat" style="width:100%"> -->
+    <div class="w3-container w3-padding-8" style="text-align:center;">
+      <h3><b>COMING SOON...</b></h3>
     </div>
-
-
-    <!-- FOOTER -->
-    <div class="footer">
-      <br>
-      <footer>Copyright &copy 2016 Stephen Ritchie</footer>
-      <br>
-      <div class="socialIcons">
-        <a href="https://twitter.com/StephenRitchie" target="blank"><img class="social" src="media/icons/twitter.svg" alt="twitter"></a>
-        <a href="https://github.com/stephen-ritchie" target="blank"><img class="social" src="media/icons/github.svg" alt="github"></a>
-        <a href="https://www.linkedin.com/in/stephen-ritchie-599408117" target="blank"><img class="social" src="media/icons/linkedin.svg" alt="Linkedin"></a>
-        <a href="https://www.instagram.com/stephenritchie/" target="blank"><img class="social" src="media/icons/instagram.svg" alt="Instagram"></a>
-      </div>
-    </div>
-
-    
   </div>
+  <hr>
+
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
 </body>
 </html>
-
-
 
