@@ -163,9 +163,10 @@ blockquote {
   margin: auto;
   /*margin-bottom: 60px;*/
   text-align: left;
-  border: 1px solid #CCCCCC;
+  font-family: Arial;
+  text-shadow: none;
   padding: 10px;
-  background-color: #F4F4F4;
+  /*background-color: #F4F4F4;*/
 }
 .blog-post-title {
   margin-bottom: 5px;

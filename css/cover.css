@@ -28,11 +28,11 @@ html,
 body {
   height: 100%;
   background-color: white;
+  text-shadow: none;
 }
 body {
   color: black;
   text-align: center;
-  text-shadow: 0 1px 1px rgba(0,0,0,.5);
 }
 
 
@@ -52,6 +52,7 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+  text-shadow: none;
 }
 
 /*  Styling for textarea element */
