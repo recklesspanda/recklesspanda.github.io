@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81686712-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments)};
-      gtag('js', new Date());
-
-      gtag('config', 'UA-81686712-1');
-    </script>
 
     <!-- Title -->
-    <title>HOME | STEPHEN RITCHIE</title>
+    <title>Bluegrass Angels</title>
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,139 +17,292 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <!-- Support for Open Graph tags -->
-    <meta property="og:url" content="http://www.stephen-ritchie.com/">
-    <meta property="og:title" content="Stephen Ritchie">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Computer science student at UK. Software engineer. See what I'm up to at http://www.stephen-ritchie.com/">
-    <meta property="og:image" content="https://andrewyang.xyz/images/profile.jpg">
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.fixed-action-btn');
-        var instances = M.FloatingActionButton.init(elems, {
-          direction: 'left',
-          hoverEnabled: false
-        });
-      });
-    </script>
+    <style>
+    .logo_img img{
+      width:60%;
+      height:auto;
+    }
+    .portfolio img {
+      width: 300px;
+      height: 100px;
+    }
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .downArrow{
+    	bottom: 45%;
+    	left: 50%;
+    }
+    .bounce {
+    	-moz-animation: bounce 3s infinite;
+    	-webkit-animation: bounce 3s infinite;
+    	animation: bounce 3s infinite;
+    }
+    @-moz-keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+      }
+      60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+      }
+    }
+    @-webkit-keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+      }
+      60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+      }
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+      }
+      60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+      }
+    }
+    </style>
 
   </head>
 
   <body>
 
-    <!-- Navbar -->
+    <!--
     <nav class="z-depth-0">
       <div class="nav-wrapper white">
-        <a href="#" class="brand-logo center black-text">Stephen Ritchie</a>
+        <a href="#" class="brand-logo center black-text"></a>
         <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large black-text"><i class="material-icons">menu</i></a>
       </div>
     </nav>
-    <!-- END Navbar -->
 
-    <!-- Side Nav Bar -->
     <ul id="slide-out" class="sidenav">
       <br>
       <br>
-      <li><a href="#">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-      <li><a href="img/StephenRitchie_Resume.pdf" target="_blank">RESUME</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="about.html">Team</a></li>
+      <li><a href="contact.html">Scope</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
-    <!-- END Side Nav Bar -->
-
-    <!-- Floating Action Button -->
-    <div class="fixed-action-btn">
-      <a class="btn-floating btn-large grey darken-4">
-        <i class="large material-icons">add</i>
-      </a>
-      <ul>
-        <li><a href="https://github.com/stephen-ritchie" target="_blank" class="btn-floating social github"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/stephen-ritchie-599408117/" target="_blank" class="btn-floating social linkedin"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="mailto:stephen.ritchie@uky.edu" class="btn-floating green"><i class="material-icons">mail_outline</i></a></li>
-        <li><a href="tel:8595765482" class="btn-floating blue"><i class="material-icons">phone_iphone</i></a></li>
-      </ul>
-    </div>
-    <!-- END Floating Action Button -->
+  -->
 
     <!-- Main Content -->
-    <main>
-      <div class="container">
-        <br>
 
-        <div class="row">
-          <div class="col s12 m12">
-            <h2>Hello World</h2>
-          </div>
-          <div class="col s12 m9">
-            <p>My name is Stephen Ritchie and I am studying computer science at the University of Kentucky. Some of my hobbies include programming fun things and designing clothes.  This website showcases different projects I have worked on over the years.  As of Summer 2018 the site is being reworked, so make sure to check back for new content.</p>
-          </div>
+      <!-- Header -->
+      <div class="grey lighten-2">
+        <br>
+        <div class="logo_img center-align">
+          <img src="img/logo_1.png">
+          <h6><i>"INVESTMENT IN KENTUCKY'S ECONOMY"</i></h6>
         </div>
-
         <br>
-        <br>
-        <br>
-
-        <h3>PROJECTS</h3>
-        <div class="collection">
-          <a href="#!" class="collection-item black-text">
-            <h5>JARVIS<span class="new badge grey" data-badge-caption="personal"></span></h5>
-            <p>COMING SOON...</p>
-          </a>
-          <a href="https://github.com/stephen-ritchie/CS498_FinalProject" class="collection-item black-text" target="_blank">
-            <h5>JENKINS EMAIL<span class="new badge grey darken-2" data-badge-caption="academic"></span></h5>
-            <p>An email notification service built for Jenkins, an open-source automation server, for use in continuous integration projects.</p>
-          </a>
+        <div class="downArrow bounce center-align">
+          <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
         </div>
-
         <br>
-        <br>
-        <br>
-
-        <h3>FASHION</h3>
-        <div class="collection">
-          <a href="#!" class="collection-item black-text">
-            <h5>PRO&#x0338;JECT DENIM: DELIVERY ONE</h5>
-            <p>COMING SOON...</p>
-          </a>
-        </div>
-
-        <br>
-        <br>
-        <br>
-
       </div>
 
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <!-- Header.end -->
 
-      <!-- Footer -->
-      <footer class="page-footer white">
-        <div class="footer-copyright white">
-          <div class="container">
-            <span class="black-text">&copy; 2018 <a href="contact.html">Contact</a></span>
-            <span class="black-text"><a href="tel:8595765482">| 859.576.5482</a></span>
-            <span class="black-text"><a href="mailto:stephen.ritchie@uky.edu">| stephen.ritchie@uky.edu</a></span>
+      <!-- About.colorbar -->
+      <div class="row blue darken-4">
+        <div class="col s1"></div>
+        <div class="col s11 white">
+          <!-- About -->
+          <div class="">
+            <div class="container">
+              <div class="row">
+                <h3 class="left-align">About</h3>
+                <p>The Bluegrass Angels are a group of accredited angel investors
+                  based in Lexington, investing solely in Kentucky based startups
+                  since 2008.  We are a volunteer group of skilled and experienced
+                  business leaders who find, fund and mentor innovative, high-tech
+                  Kentucky startups seeking financial viability and long-term success.
+                  This includes working with the University of Kentucky to help
+                  commercialize ongoing research.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.</p>
+              </div>
+              <div class="row">
+                <h5 class="col s12 center-align">Recent Investments</h5>
+              </div>
+              <div class="row">
+                <div class="col s12 m4 portfolio center-align">
+                  <a href="#" target="_blank"><img src="img/logo_placeholder.png"></a>
+                </div>
+                <div class="col s12 m4 portfolio center-align">
+                  <a href="#" target="_blank"><img src="img/logo_placeholder.png"></a>
+                </div>
+                <div class="col s12 m4 portfolio center-align">
+                  <a href="#" target="_blank"><img src="img/logo_placeholder.png"></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col 12 s12 center-align">
+                  <a class="waves-effect waves-light btn center">Portfolio</a>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- About.END -->
         </div>
-      </footer>
-      <!-- END Footer -->
+      </div>
+      <!-- About.colorbar.END -->
 
-    </main>
-    <!-- END Main Content -->
+      <!-- team.colorbar -->
+      <div class="row teal darken-2">
+        <div class="col s1"></div>
+        <div class="col s11 white">
+          <!-- Team -->
+          <div class="">
+            <div class="container">
+              <div class="row">
+                <h3 class="left-align">Team</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="row">
+                <div class="col s12 m4">
+                  <div class="card z-depth-0">
+                    <div class="center-align">
+                      <img class="circle" src="img/head_placeholder.png">
+                      <p><b>John Doe</b></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m4">
+                  <div class="card z-depth-0">
+                    <div class="center-align">
+                      <img class="circle" src="img/head_placeholder.png">
+                      <p><b>Jane Doe</b></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m4">
+                  <div class="card z-depth-0">
+                    <div class="center-align">
+                      <img class="circle" src="img/head_placeholder.png">
+                      <p><b>John Doe</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Team.end -->
+        </div>
+      </div>
+      <!-- team.colorbar.END -->
+
+      <!-- contact.colorbar -->
+      <div class="row green darken-2">
+        <div class="col s1"></div>
+        <div class="col s11 white">
+          <!-- Contact -->
+          <div class="">
+            <div class="container">
+              <div class="row">
+                <h3 class="left-align">Contact</h3>
+              </div>
+
+              <div class="row flex">
+
+                <div class="col s12 m6 grey lighten-2">
+                  <h6>INVESTORS</h6>
+                  <p>All members must be accredited investors as defined in Regulation D under the Securitites Act of 1993, or SEC Rule 501, and must be able to sustain the financial risk inherent in their investments.</p>
+                  <p>Interested parties must be able to meet these requirements and may apply for a membership at any time.  Prior to making a final committment, prospective members are encouraged to attend one of our monthly meetings and experience the fellowship of the group.</p>
+                </div>
+                <div class="col s12 m6 grey lighten-3">
+                  <h6>FOUDNDERS</h6>
+                  <p>In the below form, please provide details of your company, business plan, funding round ask, and any other relevant information.</p>
+                  <p>Please not that the Bluegrass Angels only invest in Kentucky based companies.  Submissions that are not based in, or planning on moving to Kentucky will not be considered for investment.</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="name" type="text" class="validate">
+                      <label for="name">Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="subject" type="text" class="validate">
+                      <label for="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="message" class="materialize-textarea"></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Contact.end -->
+        </div>
+      </div>
+      <!-- contact.colorbar.END -->
+
+
+
+
+
+
 
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
