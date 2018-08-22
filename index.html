@@ -16,10 +16,18 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+            $("#logo1").fadeIn(4000);
+            $("#logo2").fadeIn(7000);
+            $("#logo3").fadeIn(9000);
+    });
+    </script>
 
     <style>
     .logo_img img{
-      width:60%;
+      width:50%;
       height:auto;
     }
     .portfolio img {
@@ -33,6 +41,9 @@
     .downArrow{
     	bottom: 45%;
     	left: 50%;
+    }
+    div.hidden {
+      display: none
     }
     .bounce {
     	-moz-animation: bounce 3s infinite;
@@ -113,16 +124,34 @@
   -->
 
     <!-- Main Content -->
+    <nav>
+      <div class="nav-wrapper grey lighten-1">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#about">About</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+
 
       <!-- Header -->
       <div class="grey lighten-2">
         <br>
         <div class="logo_img center-align">
-          <img src="img/logo_1.png">
-          <h6><i>"INVESTMENT IN KENTUCKY'S ECONOMY"</i></h6>
+          <img id="logo1" style="display:none;" src="img/logo_1.png">
+          <h6 id="logo2" style="display:none;"><i>"INVESTMENT IN KENTUCKY'S ECONOMY"</i></h6>
         </div>
         <br>
-        <div class="downArrow bounce center-align">
+        <div id="logo3" style="display:none;" class="downArrow bounce center-align">
           <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
         </div>
         <br>
@@ -138,7 +167,7 @@
           <div class="">
             <div class="container">
               <div class="row">
-                <h3 class="left-align">About</h3>
+                <h3 id="about" class="left-align">About</h3>
                 <p>The Bluegrass Angels are a group of accredited angel investors
                   based in Lexington, investing solely in Kentucky based startups
                   since 2008.  We are a volunteer group of skilled and experienced
@@ -195,7 +224,7 @@
           <div class="">
             <div class="container">
               <div class="row">
-                <h3 class="left-align">Team</h3>
+                <h3 id="team" class="left-align">Team</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                   ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -246,7 +275,7 @@
           <div class="">
             <div class="container">
               <div class="row">
-                <h3 class="left-align">Contact</h3>
+                <h3 id="contact" class="left-align">Contact</h3>
               </div>
 
               <div class="row flex">
@@ -298,13 +327,16 @@
       </div>
       <!-- contact.colorbar.END -->
 
-
-
-
+      <footer class="page-footer grey lighten-1">
+        <div class="footer-copyright">
+          <div class="container">&copy; 2018 Bluegrass Angels, LLC</div>
+        </div>
+      </footer>
 
 
 
     <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/init.js"></script>
