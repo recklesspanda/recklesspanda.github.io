@@ -1,29 +1,400 @@
+
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <title>COVID-19</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <title>Stephen Ritchie</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    
   </head>
   <body>
-    <div class="container">
-      <br>
-      <br>
-      <br>
-      <a href="http://www.stephen-ritchie.com/report.pdf">download</a>
-      <iframe src="/report.pdf" width="100%" height="1000px">
-      </iframe>
+    <div class="container-fluid">
+      
+<div class="container">
+  <h1>COVID-19 Reports</h1>
+  <footer class="blockquote-footer">Last Updated 2020-05-22 02:29:28.366447</footer>
+  <br>
+  <p>All tables and visualizations* are made possible with data generously provided by <a href="https://covidtracking.com/api">The COVID Tracking Project</a>.  All data is published under a <a href="https://covidtracking.com/license">Creative Commons CC BY-NC-4.0</a> license. Please note that the Data API uses multiple sources in its data collection for each state. Each state has its own set of caveats, and they can be found <a href="https://covidtracking.com/data">here</a>.</p>
+  <p>*Data for individual Kentucky counties was not available via the Data API and was manually curated.</p>
+  <hr>
+  <h2>United States</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Confirmed Cases</h4>
+          <p>1,567,427</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Deaths</h4>
+          <p>88,985</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Tested</h4>
+          <p>13,056,206</p>
+          <hr>
+          <p class="mb-0">0.04% of population</p>
+        </div>
+      </div>
     </div>
+  </div>
+  <img src="/static/img/positiveIncrease_US.png" class="img-fluid">
+  <img src="/static/img/positive_US.png" class="img-fluid">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <hr>
+  <h2>Southeastern Conference</h2>
+  <p>Information below encompasses the eleven states within the NCAA's Southeastern Conference.</p>
+  <img src="/static/img/positiveIncrease_sec.png" class="img-fluid">
+  <img src="/static/img/positive_sec.png" class="img-fluid">
+  <hr>
+
+  
+  <h2>Kentucky</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Confirmed Cases</h4>
+          <p>8,167</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Deaths</h4>
+          <p>376</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Tested</h4>
+          <p>158,672</p>
+          <hr>
+          <p class="mb-0">0.04% of population</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/static/img/positiveIncrease_KY.png" class="img-fluid">
+  <img src="/static/img/positive_KY.png" class="img-fluid">
+  <img src="/static/img/positiveIncrease_KY_counties.png" class="img-fluid">
+  <hr>
+  
+  <h2>Alabama</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Confirmed Cases</h4>
+          <p>13,119</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Deaths</h4>
+          <p>529</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Tested</h4>
+          <p>170,739</p>
+          <hr>
+          <p class="mb-0">0.04% of population</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/static/img/positiveIncrease_AL.png" class="img-fluid">
+  <img src="/static/img/positive_AL.png" class="img-fluid">
+  <img src="/static/img/positiveIncrease_AL_counties.png" class="img-fluid">
+  <hr>
+  
+  <h2>Tennessee</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Confirmed Cases</h4>
+          <p>18,961</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Deaths</h4>
+          <p>313</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Tested</h4>
+          <p>360,583</p>
+          <hr>
+          <p class="mb-0">0.05% of population</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/static/img/positiveIncrease_TN.png" class="img-fluid">
+  <img src="/static/img/positive_TN.png" class="img-fluid">
+  <img src="/static/img/positiveIncrease_TN_counties.png" class="img-fluid">
+  <hr>
+  
+  <h2>Louisiana</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Confirmed Cases</h4>
+          <p>36,504</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Deaths</h4>
+          <p>2,629</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Tested</h4>
+          <p>305,381</p>
+          <hr>
+          <p class="mb-0">0.07% of population</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/static/img/positiveIncrease_LA.png" class="img-fluid">
+  <img src="/static/img/positive_LA.png" class="img-fluid">
+  <img src="/static/img/positiveIncrease_LA_counties.png" class="img-fluid">
+  <hr>
+  
+  <h2>Florida</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Confirmed Cases</h4>
+          <p>48,675</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Deaths</h4>
+          <p>2,222</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Tested</h4>
+          <p>813,929</p>
+          <hr>
+          <p class="mb-0">0.04% of population</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/static/img/positiveIncrease_FL.png" class="img-fluid">
+  <img src="/static/img/positive_FL.png" class="img-fluid">
+  <img src="/static/img/positiveIncrease_FL_counties.png" class="img-fluid">
+  <hr>
+  
+  <h2>Missouri</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Confirmed Cases</h4>
+          <p>11,340</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Deaths</h4>
+          <p>661</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Tested</h4>
+          <p>162,092</p>
+          <hr>
+          <p class="mb-0">0.03% of population</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/static/img/positiveIncrease_MO.png" class="img-fluid">
+  <img src="/static/img/positive_MO.png" class="img-fluid">
+  <img src="/static/img/positiveIncrease_MO_counties.png" class="img-fluid">
+  <hr>
+  
+  <h2>Arkansas</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Confirmed Cases</h4>
+          <p>402</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Deaths</h4>
+          <p>10</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Tested</h4>
+          <p>39,545</p>
+          <hr>
+          <p class="mb-0">0.01% of population</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/static/img/positiveIncrease_AK.png" class="img-fluid">
+  <img src="/static/img/positive_AK.png" class="img-fluid">
+  <img src="/static/img/positiveIncrease_AK_counties.png" class="img-fluid">
+  <hr>
+  
+  <h2>Georgia</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Confirmed Cases</h4>
+          <p>40,405</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Deaths</h4>
+          <p>1,754</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Tested</h4>
+          <p>407,731</p>
+          <hr>
+          <p class="mb-0">0.04% of population</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/static/img/positiveIncrease_GA.png" class="img-fluid">
+  <img src="/static/img/positive_GA.png" class="img-fluid">
+  <img src="/static/img/positiveIncrease_GA_counties.png" class="img-fluid">
+  <hr>
+  
+  <h2>Mississippi</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Confirmed Cases</h4>
+          <p>53,510</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Deaths</h4>
+          <p>5,219</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Tested</h4>
+          <p>454,740</p>
+          <hr>
+          <p class="mb-0">0.15% of population</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/static/img/positiveIncrease_MI.png" class="img-fluid">
+  <img src="/static/img/positive_MI.png" class="img-fluid">
+  <img src="/static/img/positiveIncrease_MI_counties.png" class="img-fluid">
+  <hr>
+  
+  <h2>South Carolina</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Confirmed Cases</h4>
+          <p>9,175</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Deaths</h4>
+          <p>407</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Tested</h4>
+          <p>138,238</p>
+          <hr>
+          <p class="mb-0">0.03% of population</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/static/img/positiveIncrease_SC.png" class="img-fluid">
+  <img src="/static/img/positive_SC.png" class="img-fluid">
+  <img src="/static/img/positiveIncrease_SC_counties.png" class="img-fluid">
+  <hr>
+  
+  <h2>Texas</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Confirmed Cases</h4>
+          <p>51,323</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Deaths</h4>
+          <p>1,419</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="alert alert-dark" role="alert">
+          <h4 class="alert-heading">Tested</h4>
+          <p>770,241</p>
+          <hr>
+          <p class="mb-0">0.03% of population</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="/static/img/positiveIncrease_TX.png" class="img-fluid">
+  <img src="/static/img/positive_TX.png" class="img-fluid">
+  <img src="/static/img/positiveIncrease_TX_counties.png" class="img-fluid">
+  <hr>
+  
+
+</div>
+
+    </div>
   </body>
 </html>
