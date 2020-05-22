@@ -7,27 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>COVID-19</title>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
   </head>
   <body>
     <div class="container-fluid">
       
 <div class="container">
-  <h1>COVID-19 Reports</h1>
-  <footer class="blockquote-footer">Last Updated 2020-05-22 02:29:28.366447</footer>
-  <a href="http://www.stephen-ritchie.com/report.pdf">download</a>
   <br>
-  <p>All tables and visualizations* are made possible with data generously provided by <a href="https://covidtracking.com/api">The COVID Tracking Project</a>.  All data is published under a <a href="https://covidtracking.com/license">Creative Commons CC BY-NC-4.0</a> license. Please note that the Data API uses multiple sources in its data collection for each state. Each state has its own set of caveats, and they can be found <a href="https://covidtracking.com/data">here</a>.</p>
-  <p>*Data for individual Kentucky counties was not available via the Data API and was manually curated.</p>
+  <h1>COVID-19 Report</h1>
+  <footer class="blockquote-footer">Last Updated 2020-05-22 07:32:50.493806</footer>
+  <br>
+  <h3>Report Layout</h3>
+  <p>This report is divided into three major sections displaying data and visualizations regarding COVID-19. All tables and visualizations are made possible with data generously provided by <a href="https://covidtracking.com/api">The COVID Tracking Project</a>.*  All data is published under a <a href="https://covidtracking.com/license">Creative Commons CC BY-NC-4.0</a> license. Please note that the Data API uses multiple sources in its data collection for each state. Each state has its own set of caveats, and they can be found <a href="https://covidtracking.com/data">here</a>.</p>
+  <p>The first section is aimed at the United States as a whole. It contains information about new daily cases, overall confirmed cases, and the number of individuals who have been tested.</p>
+  <p>The second section is a comparison of all states with schools in the NCAA Southeastern Conference (SEC). This section can be used to help showcase the current state of COVID-19 in the southeastern United States.</p>
+  <p>The third section shows information about each state in the SEC individually. Included here is an additional set of charts showing the daily increases of the counties in which the SEC schools are located. These charts help give a hyper-local view of COVID-19.</p>
+  <br>
+  <p><b>*</b>Data for individual state counties was not available via the Data API and was manually curated from multiple online sources.</p>
+  <h3>Terminology</h3>
+  <ul class="list-unstyled">
+    <ul>
+      <li><b>Chart: Daily Increase of Positive Cases</b>
+          <p>This type of plot shows the number of new confirmed cases each day. A line with a level or negative slope can
+            indicate that the rate of spread is either being managed or slowed. Since the number of new cases can vary from day
+            to day due to reporting deficiencies both a 14 day and 30 day moving average are charted to help reduce noise,
+            or the choppiness, of the data.</p>
+      </li>
+      <li><b>Chart: Confirmed Cases</b>
+          <p>This type of plot shows the total number of confirmed cases over time. This line will plateau once the virus is no longer spreading.</p>
+      </li>
+      <li><b>Moving Average</b>
+          <p>A moving average is an indicator used in technical analysis to help smooth out "noise" from a chart with
+            short-term fluctuations. It is considered a trend following, or lagging, indicator because it is based on
+            past prices. However, a combination or short and long term moving averages are often used to help predict, but not guarantee, where a chart will head.</p>
+      </li>
+    </ul>
+  </ul>
+  <h2>Notes</h2>
+  <ul class="list-unstyled">
+    <ul>
+      <li>States with the fastest increasing rate of cases:</li>
+      <ul>
+        <li>South Dakota</li>
+        <li>Arkansas</li>
+        <li>Maine</li>
+      </ul>
+        <li>States to watch:</li>
+        <ul>
+            <li>Georgia</li>
+            <ul>
+              <li>Made some of the earliest and most extensive moves to loosen restrictions.</li>
+              <li>Shelter-in-place order ended April 30, except for vulnerable populations.</li>
+            </ul>
+        </ul>
+    </ul>
+  </ul>
+  <h4>Disclaimer</h4>
+  <p>The accuracy of the data in this document can only be as accurate as its source. The COVID Tracking Project has <a href="https://covidtracking.com/data">rated</a> the accuracy of all states and territories they provide through their Data API. With the exception of Arkansas (C rating), all states used in this document were rated at least B, with many rated as A+.</p>
   <hr>
   <h2>United States</h2>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -57,13 +102,17 @@
 
   <hr>
   <h2>Southeastern Conference</h2>
-  <p>Information below encompasses the eleven states within the NCAA's Southeastern Conference.</p>
+  <p>Most states in the SEC seem to be "flattening their curve". After a large spike of cases in early April, the rate
+    of new cases has begun to stabilize. It should be remembered that as testing capacity and availability increases, the number
+  of new daily cases may also increase.</p>
   <img src="/static/img/positiveIncrease_sec.png" class="img-fluid">
   <img src="/static/img/positive_sec.png" class="img-fluid">
   <hr>
 
   
   <h2>Kentucky</h2>
+    <footer class="blockquote-footer">Data Quality Grade: A</footer>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -88,12 +137,20 @@
       </div>
     </div>
   </div>
+  <!-- State Daily Increase -->
   <img src="/static/img/positiveIncrease_KY.png" class="img-fluid">
+  <!-- State Total -->
   <img src="/static/img/positive_KY.png" class="img-fluid">
-  <img src="/static/img/positiveIncrease_KY_counties.png" class="img-fluid">
+  <!-- State Testing -->
+  <!-- County Daily Increase -->
+  
+  <img src="/static/img/positiveIncrease_fayette.png" class="img-fluid">
+  
   <hr>
   
   <h2>Alabama</h2>
+    <footer class="blockquote-footer">Data Quality Grade: B</footer>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -118,12 +175,22 @@
       </div>
     </div>
   </div>
+  <!-- State Daily Increase -->
   <img src="/static/img/positiveIncrease_AL.png" class="img-fluid">
+  <!-- State Total -->
   <img src="/static/img/positive_AL.png" class="img-fluid">
-  <img src="/static/img/positiveIncrease_AL_counties.png" class="img-fluid">
+  <!-- State Testing -->
+  <!-- County Daily Increase -->
+  
+  <img src="/static/img/positiveIncrease_tuscaloosa.png" class="img-fluid">
+  
+  <img src="/static/img/positiveIncrease_lee.png" class="img-fluid">
+  
   <hr>
   
   <h2>Tennessee</h2>
+    <footer class="blockquote-footer">Data Quality Grade: B</footer>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -148,12 +215,22 @@
       </div>
     </div>
   </div>
+  <!-- State Daily Increase -->
   <img src="/static/img/positiveIncrease_TN.png" class="img-fluid">
+  <!-- State Total -->
   <img src="/static/img/positive_TN.png" class="img-fluid">
-  <img src="/static/img/positiveIncrease_TN_counties.png" class="img-fluid">
+  <!-- State Testing -->
+  <!-- County Daily Increase -->
+  
+  <img src="/static/img/positiveIncrease_knox.png" class="img-fluid">
+  
+  <img src="/static/img/positiveIncrease_davidson.png" class="img-fluid">
+  
   <hr>
   
   <h2>Louisiana</h2>
+    <footer class="blockquote-footer">Data Quality Grade: B</footer>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -178,12 +255,20 @@
       </div>
     </div>
   </div>
+  <!-- State Daily Increase -->
   <img src="/static/img/positiveIncrease_LA.png" class="img-fluid">
+  <!-- State Total -->
   <img src="/static/img/positive_LA.png" class="img-fluid">
-  <img src="/static/img/positiveIncrease_LA_counties.png" class="img-fluid">
+  <!-- State Testing -->
+  <!-- County Daily Increase -->
+  
+  <img src="/static/img/positiveIncrease_eastbatonrouge.png" class="img-fluid">
+  
   <hr>
   
   <h2>Florida</h2>
+    <footer class="blockquote-footer">Data Quality Grade: A</footer>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -208,12 +293,20 @@
       </div>
     </div>
   </div>
+  <!-- State Daily Increase -->
   <img src="/static/img/positiveIncrease_FL.png" class="img-fluid">
+  <!-- State Total -->
   <img src="/static/img/positive_FL.png" class="img-fluid">
-  <img src="/static/img/positiveIncrease_FL_counties.png" class="img-fluid">
+  <!-- State Testing -->
+  <!-- County Daily Increase -->
+  
+  <img src="/static/img/positiveIncrease_alachua.png" class="img-fluid">
+  
   <hr>
   
   <h2>Missouri</h2>
+    <footer class="blockquote-footer">Data Quality Grade: B</footer>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -238,12 +331,20 @@
       </div>
     </div>
   </div>
+  <!-- State Daily Increase -->
   <img src="/static/img/positiveIncrease_MO.png" class="img-fluid">
+  <!-- State Total -->
   <img src="/static/img/positive_MO.png" class="img-fluid">
-  <img src="/static/img/positiveIncrease_MO_counties.png" class="img-fluid">
+  <!-- State Testing -->
+  <!-- County Daily Increase -->
+  
+  <img src="/static/img/positiveIncrease_boone.png" class="img-fluid">
+  
   <hr>
   
   <h2>Arkansas</h2>
+    <footer class="blockquote-footer">Data Quality Grade: C</footer>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -268,12 +369,20 @@
       </div>
     </div>
   </div>
+  <!-- State Daily Increase -->
   <img src="/static/img/positiveIncrease_AK.png" class="img-fluid">
+  <!-- State Total -->
   <img src="/static/img/positive_AK.png" class="img-fluid">
-  <img src="/static/img/positiveIncrease_AK_counties.png" class="img-fluid">
+  <!-- State Testing -->
+  <!-- County Daily Increase -->
+  
+  <img src="/static/img/positiveIncrease_washington.png" class="img-fluid">
+  
   <hr>
   
   <h2>Georgia</h2>
+    <footer class="blockquote-footer">Data Quality Grade: A</footer>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -298,12 +407,20 @@
       </div>
     </div>
   </div>
+  <!-- State Daily Increase -->
   <img src="/static/img/positiveIncrease_GA.png" class="img-fluid">
+  <!-- State Total -->
   <img src="/static/img/positive_GA.png" class="img-fluid">
-  <img src="/static/img/positiveIncrease_GA_counties.png" class="img-fluid">
+  <!-- State Testing -->
+  <!-- County Daily Increase -->
+  
+  <img src="/static/img/positiveIncrease_athensclarke.png" class="img-fluid">
+  
   <hr>
   
   <h2>Mississippi</h2>
+    <footer class="blockquote-footer">Data Quality Grade: A+</footer>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -328,12 +445,20 @@
       </div>
     </div>
   </div>
+  <!-- State Daily Increase -->
   <img src="/static/img/positiveIncrease_MI.png" class="img-fluid">
+  <!-- State Total -->
   <img src="/static/img/positive_MI.png" class="img-fluid">
-  <img src="/static/img/positiveIncrease_MI_counties.png" class="img-fluid">
+  <!-- State Testing -->
+  <!-- County Daily Increase -->
+  
+  <img src="/static/img/positiveIncrease_oktibbeha.png" class="img-fluid">
+  
   <hr>
   
   <h2>South Carolina</h2>
+    <footer class="blockquote-footer">Data Quality Grade: A+</footer>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -358,12 +483,20 @@
       </div>
     </div>
   </div>
+  <!-- State Daily Increase -->
   <img src="/static/img/positiveIncrease_SC.png" class="img-fluid">
+  <!-- State Total -->
   <img src="/static/img/positive_SC.png" class="img-fluid">
-  <img src="/static/img/positiveIncrease_SC_counties.png" class="img-fluid">
+  <!-- State Testing -->
+  <!-- County Daily Increase -->
+  
+  <img src="/static/img/positiveIncrease_richland.png" class="img-fluid">
+  
   <hr>
   
   <h2>Texas</h2>
+    <footer class="blockquote-footer">Data Quality Grade: B</footer>
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm">
@@ -388,9 +521,15 @@
       </div>
     </div>
   </div>
+  <!-- State Daily Increase -->
   <img src="/static/img/positiveIncrease_TX.png" class="img-fluid">
+  <!-- State Total -->
   <img src="/static/img/positive_TX.png" class="img-fluid">
-  <img src="/static/img/positiveIncrease_TX_counties.png" class="img-fluid">
+  <!-- State Testing -->
+  <!-- County Daily Increase -->
+  
+  <img src="/static/img/positiveIncrease_brazos.png" class="img-fluid">
+  
   <hr>
   
 
